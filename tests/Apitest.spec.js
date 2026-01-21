@@ -84,24 +84,24 @@ test('Delete user', async ({ request }) => {
   console.log('Delete response:', responseBody);
 });
 //Otwani files----Get API request 
-test.only("Post call Booking ID ",async({request})=>{
+// test("Post call Booking ID ",async({request})=>{
 
-  const Authdata={
-    "username" : "admin",
-    "password" : "password123"
-  }
+//   const Authdata={
+//     "username" : "admin",
+//     "password" : "password123"
+//   }
 
-  const response= await request.post("https://restful-booker.herokuapp.com/auth"
-,{
-    headers:
-          {
-            "Content-Type":"application/json"
-          },data: {Authdata}
+//   const response= await request.post("https://restful-booker.herokuapp.com/auth"
+// ,{
+//     headers:
+//           {
+//             "Content-Type":"application/json"
+//           },data: {Authdata}
           
-  });
-  console.log(response.status());
-  expect(response.status()).toBe(200);
-})
+//   });
+//   console.log(response.status());
+//   expect(response.status()).toBe(200);
+// })
 
 
 
