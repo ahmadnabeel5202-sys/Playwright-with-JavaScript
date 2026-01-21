@@ -48,7 +48,7 @@ export default defineConfig({
       {
     name: 'chromium',
     use: {
-      headless: false,             // run with browser UI
+      headless: true ,             // run with browser UI
       ...devices['Desktop Chrome'], // merge device settings
     },
   },
