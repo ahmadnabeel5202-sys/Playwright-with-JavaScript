@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -12,5 +16,8 @@
     "@types/node": "^24.9.1",
     "allure-commandline": "^2.36.0",
     "allure-playwright": "^3.4.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.3"
   }
 }
