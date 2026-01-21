@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 import { loginpage } from '../Pages/Loginpage';
 import { Homepage } from '../Pages/Homepage';
 import { Cartpage } from '../Pages/Cartpage';
-import { credentials } from '../utils/credentials.js';
+import { credentials } from '../Utils/credentials.js';
 
 test('Add product to cart and verify', async ({ page }) => {
     
