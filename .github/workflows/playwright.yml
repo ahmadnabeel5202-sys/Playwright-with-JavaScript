@@ -61,3 +61,19 @@ jobs:
     #     name: playwright-report
     #     path: playwright-report/
     #     retention-days: 30
+    - name: Slack Notification
+  uses: rtCamp/action-slack-notify@v2
+  if: always()
+  env:
+    SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+    SLACK_USERNAME: ahmadnabeel5202
+    SLACK_TITLE: "Playwright Test Run"
+    Status: ${{ job.status }}
+    SLACK_COLOR: ${{ job.status }}
+    SLACK_MESSAGE: 
+    Repository: ${{ github.repository }}
+    Branch: ${{ github.ref_name }}
+    Triggered by: ${{ github.actor }}
+
+    Allure Report: 
+    https://ahmadnabeel5202-sys.github.io/Playwright-with-JavaScript/
