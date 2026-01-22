@@ -70,7 +70,7 @@ jobs:
     SLACK_TITLE: "Playwright Test Run"
     Status: ${{ job.status }}
     SLACK_COLOR: ${{ job.status }}
-    SLACK_MESSAGE: 
+    SLACK_MESSAGE: |
     Repository: ${{ github.repository }}
     Branch: ${{ github.ref_name }}
     Triggered by: ${{ github.actor }}
