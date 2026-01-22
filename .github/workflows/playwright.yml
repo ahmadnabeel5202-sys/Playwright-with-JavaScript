@@ -28,6 +28,9 @@ jobs:
     
     - name: Run Playwright tests
       run: npx playwright test tests/Pomtest.spec.js
+      env:
+        USERNAME: ${{ secrets.USERNAME }}
+        TEST_USERNAME: ${{ secrets.TEST_USERNAME }}
     
     - name: Upload test results
       uses: actions/upload-artifact@v4
