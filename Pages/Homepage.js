@@ -10,7 +10,7 @@ exports.Homepage=class Homepage{
       
     async addProductToCart(productName){
 
-    
+       await this.page.waitForLoadState('domcontentloaded');
        await this.page.waitForSelector(this.productlist, { state: 'visible', timeout: 10000 });
 
        //New fix using Gpt --For check

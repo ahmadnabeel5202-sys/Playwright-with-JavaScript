@@ -3,8 +3,8 @@ dotenv.config();
 
 export const credentials = {
     validUser: {
-       username: process.env.USERNAME,
-       password: process.env.TEST_USERNAME
+       username: process.env.TEST_USERNAME,
+       password: process.env.TEST_PASSWORD
         // apiKey: process.env.API_KEY
     }
 };
