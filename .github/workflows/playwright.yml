@@ -68,12 +68,13 @@ jobs:
     SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
     SLACK_USERNAME: ahmadnabeel5202
     SLACK_TITLE: "Playwright Test Run"
-    Status: ${{ job.status }}
+    
     SLACK_COLOR: ${{ job.status }}
     SLACK_MESSAGE: |
     Repository: ${{ github.repository }}
     Branch: ${{ github.ref_name }}
     Triggered by: ${{ github.actor }}
+    Status: ${{ job.status }}
 
-    Allure Report: 
+    Allure Report:
     https://ahmadnabeel5202-sys.github.io/Playwright-with-JavaScript/
